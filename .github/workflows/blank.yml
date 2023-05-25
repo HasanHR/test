@@ -13,13 +13,9 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Install Go
-        run: |
-          chmod +x go.sh
-          sed -i -e 's/\r$//' go.sh
-          ./go.sh
-
       - name: Verify Go installation
         run: go version
-
+              
+      - name: Verify Go installation
+        run: go install github.com/swaggo/swag/cmd/swag@latest
       # Continue with your workflow steps...
