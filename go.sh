@@ -19,11 +19,7 @@ go version
 
 swag_install () {
 go install github.com/swaggo/swag/cmd/swag@latest
-version=$(swag --version 2>&1)
-if [ $? -eq 0 ]; then
-  echo "Swag version: $version"
-else
-  echo "Swag is not installed or an error occurred."
+swag --version
 }
 
 
