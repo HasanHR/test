@@ -15,7 +15,7 @@ jobs:
 
       - name: Install Go
         run: |
-          chmod +x go.sh
+          chmod +x /go.sh
           ./go.sh
 
       - name: Verify Go installation
