@@ -16,13 +16,5 @@ echo 'export PATH=$PATH:/usr/local/go/bin' >> $GITHUB_ENV
 go version
 }
 
-
-swag_install () {
-go install github.com/swaggo/swag/cmd/swag@latest
-swag --version
-}
-
-
 go_install
-swag_install
 fi
