@@ -10,4 +10,3 @@ sudo tar -C /usr/local -xzf "go$VERSION.linux-amd64.tar.gz"
 # Set up environment variables
 echo "Setting up environment variables"
 echo 'export PATH=$PATH:/usr/local/go/bin' >> $GITHUB_ENV
-fi
