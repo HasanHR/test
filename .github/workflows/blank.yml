@@ -19,12 +19,4 @@ jobs:
           sed -i -e 's/\r$//' go.sh
           ./go.sh
       
-      - name: Verify Go installation
-        run: go version
-              
-      - name: Verify Go installation
-        run: go install github.com/swaggo/swag/cmd/swag@latest
-        
-      - name: Verify Go installation
-        run: swag --version
-      # Continue with your workflow steps...
+     
