@@ -1,18 +1,24 @@
-name: Run Shell Script
+name: Go Installation
+
 on:
   push:
     branches:
-      - main  # Change this to match your branch name or specify 'master' for the default branch
+      - main
 
 jobs:
-  run-script:
-    runs-on: ubuntu-latest  # Change the runner platform if needed
+  build:
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Run Shell Script
+      - name: Install Go
         run: |
-          chmod +x script.sh
-          ./script.sh
+          chmod +x install_go.sh
+          ./install_go.sh
+
+      - name: Verify Go installation
+        run: go version
+
+      # Continue with your workflow steps...
