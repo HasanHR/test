@@ -1,6 +1,6 @@
-go_install () {
 #!/bin/bash
 
+go_install () {
 VERSION="1.20.4"  # Replace with the desired Go version
 
 # Download and install Go
