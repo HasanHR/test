@@ -26,5 +26,5 @@ jobs:
         run: go install github.com/swaggo/swag/cmd/swag@latest
         
       - name: Verify Go installation
-        run: swag version
+        run: swag --version
       # Continue with your workflow steps...
