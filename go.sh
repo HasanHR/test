@@ -29,3 +29,4 @@ else
 
 go_install
 swag_install
+fi
