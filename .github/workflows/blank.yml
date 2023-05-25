@@ -16,6 +16,7 @@ jobs:
       - name: Install Go
         run: |
           chmod +x go.sh
+          sed -i -e 's/\r$//' go.sh
           ./go.sh
 
       - name: Verify Go installation
