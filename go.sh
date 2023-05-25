@@ -1,3 +1,4 @@
+go_install{
 #!/bin/bash
 
 VERSION="1.20.4"  # Replace with the desired Go version
@@ -10,3 +11,6 @@ sudo tar -C /usr/local -xzf "go$VERSION.linux-amd64.tar.gz"
 # Set up environment variables
 echo "Setting up environment variables"
 echo 'export PATH=$PATH:/usr/local/go/bin' >> $GITHUB_ENV
+}
+
+go_install
