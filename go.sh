@@ -17,4 +17,4 @@ go version
 }
 
 go_install
-fi
+
